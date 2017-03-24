@@ -6,7 +6,7 @@ let Link = require('../model/link');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'URL Shortener Microservice' });
 });
 
 router.get('/:shortCode(*)', function (req, res) {
