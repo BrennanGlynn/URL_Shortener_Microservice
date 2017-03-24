@@ -1,6 +1,7 @@
 let mongoose = require('mongoose');
 
-let dbURI = process.env.MONGODB_URI || 'mongodb://localhost/27017';
+let dbURI = process.env.MONGODB_URI || 'mongodb://localhost/links';
+
 
 // CONNECTION EVENTS
 
@@ -12,3 +13,5 @@ mongoose.connect(dbURI).then(
 		console.log(err)
 	}
 );
+
+module.exports = mongoose;
